@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cue Ball
+  - Stripe Ball
+  - Solid Ball
+  - 8 Ball
   layers:
   - Default
   - TransparentFX
