@@ -725,6 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1520678178}
+  - component: {fileID: 1520678179}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -746,6 +747,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520678179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520678177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b21ccc7a1b29dd4aa8e5d0ade0f5bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667610105
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +772,7 @@ GameObject:
   - component: {fileID: 1667610108}
   - component: {fileID: 1667610107}
   - component: {fileID: 1667610110}
+  - component: {fileID: 1667610111}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -874,6 +888,25 @@ MonoBehaviour:
   - {fileID: 4243321674110620047, guid: 41cedfb7f9bfaa64fb2ec75a7b3309df, type: 3}
   cueBallPos: {fileID: 926878316}
   headballPos: {fileID: 2051743658}
+--- !u!114 &1667610111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667610105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a602f7ee672b740888ea9f6bb70728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1Stat: {fileID: 794647560}
+  p2Stat: {fileID: 1375487195}
+  bigText: {fileID: 1694481761}
+  restartButton: {fileID: 0}
+  headPosition: {fileID: 2051743658}
+  player1: {fileID: 2082206900}
+  player2: {fileID: 1520678179}
 --- !u!1 &1694481759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2082206899}
+  - component: {fileID: 2082206900}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -1068,6 +1102,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082206900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082206898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b21ccc7a1b29dd4aa8e5d0ade0f5bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &82986462930471565
 MeshRenderer:
   m_ObjectHideFlags: 0
