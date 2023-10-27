@@ -35,7 +35,7 @@ public class GameSetup : MonoBehaviour
     {
         GameObject cueBall = Instantiate(ballPrefabs[0], cueBallPos.position, Quaternion.identity);
         cueBall.GetComponent<Ball>().setCueBall(true);
-        //cueBall.GetComponent<Ball>().setIsAppear(true);
+        cueBall.GetComponent<Ball>().setIsAppear(true);
         cueBall.GetComponent<Ball>().setBallValue(0);
     }
 
@@ -43,7 +43,7 @@ public class GameSetup : MonoBehaviour
     {
         GameObject eightBall = Instantiate(ballPrefabs[8], placePos, Quaternion.identity);
         eightBall.GetComponent<Ball>().set8Ball(true);
-        //eightBall.GetComponent<Ball>().setIsAppear(true);
+        eightBall.GetComponent<Ball>().setIsAppear(true);
         eightBall.GetComponent<Ball>().setBallValue(8);
     }
 

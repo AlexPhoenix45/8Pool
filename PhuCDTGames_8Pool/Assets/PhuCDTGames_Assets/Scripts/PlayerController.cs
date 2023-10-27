@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private bool isMyTurn;
-    private bool isWin;
-    private bool isWinningShot;
-    private bool isSolid;
+    public bool isMyTurn;
+    public bool isWin;
+    public bool isWinningShot;
+    public bool isSolid;
+    public bool hasAssigned = false;
 
     public void setIsMyTurn(bool value)
     {
@@ -34,6 +35,11 @@ public class PlayerController : MonoBehaviour
         isSolid = false;
     }
 
+    public void setHasAssigned(bool value)
+    {
+        hasAssigned = value;
+    }
+
     public bool getIsMyTurn()
     {
         return isMyTurn;
@@ -53,11 +59,16 @@ public class PlayerController : MonoBehaviour
     {
         if (isSolid)
         {
-            return 0;
+            return 0; //Is solid
         }
         else
         {
-            return 1;
+            return 1; //Is Stripe
         }
+    }
+
+    public bool getHasAssigned()
+    {
+        return hasAssigned;
     }
 }
